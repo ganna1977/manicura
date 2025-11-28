@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón de Uñas Ana</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="video/199015-909322188_tiny.mp4" type="video/mp4">
+    </video>
+  </div>
+  <header class="header">
+    <div class="logo">Alina Nails</div>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#precios">Precios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#citas">Pedir cita</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO / PORTADA -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>Manicura y Pedicura Profesional</h1>
+        <p>Uñas cuidadas, diseños bonitos y un momento de relax solo para ti.</p>
+        <a href="#citas" class="btn-principal">Reservar cita</a>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="bloque">
+      <h2>Servicios</h2>
+      <div class="tarjetas-servicios">
+        <article class="tarjeta">
+          <h3>Manicura clásica</h3>
+          <p>Lima, cutículas, hidratación y esmalte clásico.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Manicura semipermanente</h3>
+          <p>Esmaltado duradero, ideal para 2–3 semanas.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Pedicura completa</h3>
+          <p>Cuidado de pies, durezas y esmaltado.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="bloque">
+      <h2>Precios</h2>
+      <table class="tabla-precios">
+        <thead>
+          <tr>
+            <th>Servicio</th>
+            <th>Desde</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Manicura clásica</td>
+            <td>15 €</td>
+          </tr>
+          <tr>
+            <td>Manicura semipermanente</td>
+            <td>22 €</td>
+          </tr>
+          <tr>
+            <td>Pedicura completa</td>
+            <td>28 €</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="nota">
+        *Los precios pueden variar según diseño, decoración y tiempo extra.
+      </p>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="bloque">
+      <h2>Galería</h2>
+      <p>Aquí irá una galería de fotos de tus trabajos 💅.</p>
+      <div class="galeria">
+        <div class="foto-placeholder">Foto 1</div>
+        <div class="foto-placeholder">Foto 2</div>
+        <div class="foto-placeholder">Foto 3</div>
+      </div>
+    </section>
+
+    <!-- PEDIR CITA -->
+    <section id="citas" class="bloque">
+      <h2>Pedir cita</h2>
+      <p>Rellena el formulario y te contactaré para confirmar la hora.</p>
+      <form id="form-cita" class="formulario">
+        <label>
+          Nombre:
+          <input type="text" name="nombre" required />
+        </label>
+
+        <label>
+          Teléfono:
+          <input type="tel" name="telefono" required />
+        </label>
+
+        <label>
+          Servicio:
+          <select name="servicio" required>
+            <option value="">Elige una opción</option>
+            <option value="manicura-clasica">Manicura clásica</option>
+            <option value="manicura-semi">Manicura semipermanente</option>
+            <option value="pedicura">Pedicura completa</option>
+          </select>
+        </label>
+
+        <label>
+          Fecha:
+          <input type="date" name="fecha" required />
+        </label>
+
+        <label>
+          Hora aproximada:
+          <input type="time" name="hora" required />
+        </label>
+
+        <label>
+          Comentarios:
+          <textarea name="comentarios" rows="3"
+            placeholder="Diseño especial, color que te gusta, etc."></textarea>
+        </label>
+
+        <button type="submit" class="btn-principal">Enviar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Alina Nails · Manicura y Pedicura</p>
+    <p>Bilbao · WhatsApp: 600 000 000 (ejemplo)</p>
+  </footer>
+</body>
+</html>
