@@ -34,6 +34,15 @@ body {
   font-size: 1.3rem;
   color: #b9318b;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-img {
+  width: 40px;
+  height: auto;
+}
 
 .nav a {
   margin-left: 1rem;
@@ -145,21 +154,46 @@ body {
 
 /* GALERÍA */
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  max-width: 500px;
+  margin: 2rerm auto;
 }
 
-.foto-placeholder {
-  background: #fbe3ff;
-  border-radius: 0.8rem;
-  height: 120px;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4p`x 12px rgba(0,0,0,0.15);
+}
+
+.carousel-track {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8b1c61;
-  font-weight: 600;
+  transition: transform 0.4s ease;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+/*BOTONES DEL CAROUSEL*/
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.3rem 0.7rem;
+  font-size: 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.carousel-btn.prev {
+  left: 0.5rem;
+}
+
+.carousel-btn.next {
+  right: 0.5rem;
 }
 
 /* FORMULARIO CITAS */
